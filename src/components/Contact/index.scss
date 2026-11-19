@@ -1,0 +1,73 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.contact__title {
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  em { font-style: normal; color: var(--blue-soft); }
+}
+.contact__text { margin-top: 8px; color: var(--muted); font-size: 0.88rem; max-width: 34ch; }
+
+.contact__info {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 0.85rem;
+  li { display: flex; align-items: center; gap: 12px; }
+  svg { color: var(--blue-soft); width: 16px; }
+  a:hover { text-decoration: underline; }
+}
+.contact__map {
+  height: 170px;
+  margin-bottom: 20px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  .leaflet-container { height: 100%; width: 100%; font: inherit; }
+}
+:root[data-theme='dark'] .contact__map .leaflet-tile {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9);
+}
+.contact__row { display: grid; gap: 20px; }
+.contact__socials {
+  display: flex;
+  gap: 18px;
+  font-size: 1.1rem;
+  a { color: var(--muted); transition: color 0.2s; &:hover { color: var(--text); } }
+}
+
+.contact__form {
+  display: grid;
+  gap: 10px;
+  input, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
+    background: var(--field);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.85rem;
+    resize: vertical;
+    &::placeholder { color: var(--muted); opacity: 0.8; }
+    &:focus { outline: none; border-color: var(--blue-soft); box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.2); }
+  }
+  .btn { justify-content: center; border-radius: var(--radius-sm); }
+  .btn:disabled { opacity: 0.7; cursor: progress; transform: none; }
+}
+.contact__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.contact__status {
+  min-height: 1.2em;
+  font-size: 0.8rem;
+  &.is-success { color: #6ee7a8; }
+  &.is-error { color: #ff8a8a; }
+}
+
+@media (max-width: 480px) { .contact__fields { grid-template-columns: 1fr; } }

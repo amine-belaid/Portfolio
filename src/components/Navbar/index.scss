@@ -1,0 +1,93 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  gap: 16px;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  b { color: var(--blue-soft); font-weight: 700; }
+}
+.navbar__links ul {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.navbar__links a {
+  display: block;
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.2s, background 0.2s;
+  &:hover { color: var(--text); }
+  &.is-active {
+    color: var(--text);
+    background: rgba(var(--accent-rgb), 0.18);
+    box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.45);
+  }
+}
+.navbar__toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* theme switch */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  &:hover { border-color: var(--blue-soft); color: var(--blue-soft); }
+}
+.navbar__actions { display: flex; align-items: center; gap: 12px; }
+
+@media (max-width: 920px) {
+  .navbar__toggle { display: inline-flex; align-items: center; justify-content: center; }
+  .navbar__cta { display: none; }
+  .navbar__links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 12px 24px 20px;
+    background: var(--menu-bg);
+    border-bottom: 1px solid var(--line);
+    &.is-open { display: block; }
+    ul { flex-direction: column; border-radius: var(--radius-md); }
+    a { padding: 13px 18px; }
+  }
+}

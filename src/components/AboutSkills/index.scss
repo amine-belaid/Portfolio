@@ -1,0 +1,90 @@
+
+
+.about-skills {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  padding: 32px 36px;
+  gap: 0;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-right: 36px;
+  border-right: 1px solid var(--line);
+}
+.about__art { flex: 0 0 240px; }
+
+.editor {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: linear-gradient(160deg, var(--ocean-a), var(--ocean-b));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.editor__code {
+  padding: 18px 16px 22px;
+  display: grid;
+  gap: 11px;
+  p {
+    height: 7px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #38bdf8, rgba(56, 189, 248, 0.25));
+    &:nth-child(even) { background: linear-gradient(90deg, #7dd3fc, rgba(125, 211, 252, 0.2)); }
+  }
+}
+
+.editor__bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.25); }
+  i:first-child { background: #ff6b6b; }
+  i:nth-child(2) { background: #ffd166; }
+  i:nth-child(3) { background: #4ade80; }
+}
+
+
+.about__headline {
+  margin: 14px 0 12px;
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  em { font-style: normal; color: var(--blue-soft); }
+}
+.about__text { color: var(--muted); font-size: 0.95rem; max-width: 40ch; }
+.btn--sm { margin-top: 18px; padding: 9px 18px; font-size: 0.82rem; }
+
+.skills { padding-left: 36px; }
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  strong { display: block; font-size: 0.92rem; font-weight: 600; }
+  small { color: var(--muted); font-size: 0.75rem; }
+}
+.skill__icon { color: var(--blue-soft); font-size: 1.5rem; width: 30px; text-align: center; flex: none; }
+
+@media (max-width: 1020px) {
+  .about-skills { grid-template-columns: 1fr; padding: 28px 24px; gap: 32px; }
+  .about { padding-right: 0; border-right: 0; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  .skills { padding-left: 0; }
+}
+@media (max-width: 560px) {
+  .about { flex-direction: column; align-items: flex-start; }
+  .about__art { flex: none; width: 100%; max-width: 280px; }
+  .skills__grid { grid-template-columns: 1fr; }
+}
