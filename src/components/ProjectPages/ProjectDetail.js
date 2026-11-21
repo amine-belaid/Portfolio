@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { PROJECTS } from '../../data/projects';
-import ProjectImage from './ProjectImage';
 import PageHeader from './PageHeader';
 import './index.scss';
+import ProjectGallery from './ProjectGallery';
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -35,9 +35,7 @@ const ProjectDetail = () => {
           </div>
         </header>
 
-        <div className="pj-cover">
-          <ProjectImage project={p} />
-        </div>
+        <ProjectGallery key={p.slug} project={p} />
 
         <div className="pj-detail__grid">
           <div>

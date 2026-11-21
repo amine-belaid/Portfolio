@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Shows the project's image; if the file is missing, shows its icon instead.
 const ProjectImage = ({ project }) => {
   const [failed, setFailed] = useState(false);
+  const cover = project.images && project.images[0];
 
-  if (!project.image || failed) {
+
+  if (!cover || failed) {
     return (
       <span
         aria-hidden="true"
@@ -20,7 +22,7 @@ const ProjectImage = ({ project }) => {
   }
   return (
     <img
-      src={project.image}
+      src={cover}
       alt={`${project.title} preview`}
       loading="lazy"
       onError={() => setFailed(true)}

@@ -24,7 +24,11 @@ export const PROJECTS = [
       'Multithreading to optimize CPU/GPU performance',
     ],
     tags: ['Python', 'EasyOCR', 'OpenCV', 'Flask', 'Tailwind CSS', 'WebSockets'],
-    image: '/projects/license-plate-recognition.png',
+    images: [
+      '/images/projects/license-plate-recognition-1.png',
+      '/images/projects/license-plate-recognition-2.png',
+      '/images/projects/license-plate-recognition-3.png',
+    ],
     github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
     icon: faCamera,
   },
@@ -44,7 +48,11 @@ export const PROJECTS = [
       'React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Sequelize',
       'AWS S3', 'CloudFront', 'Cloudinary', 'JWT', 'Zustand',
     ],
-    image: '/projects/website-builder.png',
+    images: [
+      '/images/projects/website-builder-1.png',
+      '/images/projects/website-builder-2.png',
+      '/images/projects/website-builder-3.png',
+    ],
     github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
     icon: faLaptopCode,
   },
@@ -61,7 +69,11 @@ export const PROJECTS = [
       'Graphical user interface (GUI) showing the processed images and the available parking spaces',
     ],
     tags: ['MATLAB', 'Image Processing', 'Object Detection', 'GUI'],
-    image: '/projects/parking-slot-detection.png',
+    images: [
+        '/images/projects/parking-slot-detection-1.png',
+        '/images/projects/parking-slot-detection-2.png',
+        '/images/projects/parking-slot-detection-3.png',
+      ],
     github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
     icon: faSquareParking,
   },
@@ -74,7 +86,12 @@ export const PROJECTS = [
     text: 'A client-server chat application built with Java RMI.',
     points: ['Object serialization', 'Communication over TCP/IP'],
     tags: ['Java', 'RMI', 'TCP/IP'],
-    image: '/projects/java-rmi-chat.png',
+    images: [
+      '/images/projects/java-rmi-chat-1.png',
+      '/images/projects/java-rmi-chat-2.png',
+      '/images/projects/java-rmi-chat-3.png',
+      '/images/projects/java-rmi-chat-4.png',
+    ],
     github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
     icon: faComments,
   },

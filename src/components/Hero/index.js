@@ -56,8 +56,18 @@ const Hero = () => {
           </ul>
         </div>
 
-  <div className="hero__visual">
-  <div className="portrait">
+ 
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+
+/*
+ <div className="hero__visual">
+
+     <div className="portrait">
     <span className="portrait__shape" aria-hidden="true" />
     <span className="portrait__dots" aria-hidden="true" />
 
@@ -87,10 +97,13 @@ const Hero = () => {
       ))}
     </ul>
   </div>
-</div>
-      </div>
-    </section>
-  );
-};
 
-export default Hero;
+ 
+</div>
+
+
+
+
+
+
+*/

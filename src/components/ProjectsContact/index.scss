@@ -1,0 +1,13 @@
+.projects-contact {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  padding: 32px 36px;
+}
+.projects-contact > .projects { min-width: 0; padding-right: 36px; border-right: 1px solid var(--line); }
+.projects-contact > .contact { min-width: 0; padding-left: 36px; }
+
+@media (max-width: 1020px) {
+  .projects-contact { grid-template-columns: minmax(0, 1fr); padding: 28px 24px; gap: 32px; }
+  .projects-contact > .projects { padding-right: 0; border-right: 0; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  .projects-contact > .contact { padding-left: 0; }
+}

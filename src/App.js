@@ -3,12 +3,12 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSkills from './components/AboutSkills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Profile from './components/Profile';
 import AllProjects from './components/ProjectPages/AllProjects';
 import ProjectDetail from './components/ProjectPages/ProjectDetail';
+import ProjectsContact from './components/ProjectsContact';
+
 
 const Home = () => (
   <>
@@ -16,12 +16,7 @@ const Home = () => (
     <main>
       <Hero />
       <AboutSkills />
-      <div className="container band">
-        <div className="panel projects-contact">
-          <Projects />
-          <Contact />
-        </div>
-      </div>
+      <ProjectsContact />
     </main>
     <Footer />
   </>

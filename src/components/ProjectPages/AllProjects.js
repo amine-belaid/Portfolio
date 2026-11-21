@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faImages } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { PROJECTS } from '../../data/projects';
 import ProjectImage from './ProjectImage';
@@ -20,9 +20,14 @@ const AllProjects = () => (
       <ol className="pj-list">
         {PROJECTS.map((p, i) => (
           <li key={p.slug} className={`pj-item ${i % 2 ? 'is-reversed' : ''}`}>
-            <Link to={`/projects/${p.slug}`} className="pj-media" aria-label={`Open ${p.title}`}>
-              <ProjectImage project={p} />
-            </Link>
+           <Link to={`/projects/${p.slug}`} className="pj-media" aria-label={`Open ${p.title}`}>
+            <ProjectImage project={p} />
+            {p.images.length > 1 && (
+              <span className="pj-count">
+                <FontAwesomeIcon icon={faImages} /> {p.images.length}
+              </span>
+            )}
+          </Link>
 
             <div className="pj-body">
               <div className="pj-meta">
