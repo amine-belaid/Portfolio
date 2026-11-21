@@ -29,7 +29,7 @@ export const PROJECTS = [
       '/images/projects/license-plate-recognition-2.png',
       '/images/projects/license-plate-recognition-3.png',
     ],
-    github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
+    github: 'https://github.com/amine-belaid/Car-license-plate-detection', // TODO: replace with the repo link
     icon: faCamera,
   },
   {
@@ -52,8 +52,10 @@ export const PROJECTS = [
       '/images/projects/website-builder-1.png',
       '/images/projects/website-builder-2.png',
       '/images/projects/website-builder-3.png',
+      '/images/projects/website-builder-4.png',
+      '/images/projects/website-builder-5.png',
     ],
-    github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
+    github: 'https://github.com/amine-belaid/Website-Builder', // TODO: replace with the repo link
     icon: faLaptopCode,
   },
   {
@@ -74,7 +76,7 @@ export const PROJECTS = [
         '/images/projects/parking-slot-detection-2.png',
         '/images/projects/parking-slot-detection-3.png',
       ],
-    github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
+    github: 'https://github.com/amine-belaid/Parking-Slot-Detection-MATLAB', // TODO: replace with the repo link
     icon: faSquareParking,
   },
   {
@@ -92,7 +94,7 @@ export const PROJECTS = [
       '/images/projects/java-rmi-chat-3.png',
       '/images/projects/java-rmi-chat-4.png',
     ],
-    github: 'https://github.com/aminebelaid2004-lang', // TODO: replace with the repo link
+    github: 'https://github.com/amine-belaid/Java-Rmi-Chat', // TODO: replace with the repo link
     icon: faComments,
   },
 ];

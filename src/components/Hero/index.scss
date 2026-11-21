@@ -164,3 +164,11 @@
   .portrait__shape { right: -18px; top: -16px; }
   .portrait__dots, .chip { display: none; }
 }
+
+/* Hero centered (no photo column) */
+.hero__inner { grid-template-columns: 1fr; min-height: 0; }
+.hero__copy { max-width: 760px; margin: 0 auto; padding: 24px 0 72px; text-align: center; }
+.hero__copy .lead { margin-left: auto; margin-right: auto; }
+.hero__actions,
+.socials { justify-content: center; }
+.hero__visual { display: none; }

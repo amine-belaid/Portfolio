@@ -7,7 +7,7 @@ import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free
 import './index.scss';
 
 export const SOCIALS = [
-  { icon: faGithub, label: 'GitHub', href: 'https://github.com/aminebelaid2004-lang' },
+  { icon: faGithub, label: 'GitHub', href: 'https://github.com/amine-belaid' },
   { icon: faLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/amine-belaid-196a67310/' },
   { icon: faFacebook, label: 'Facebook', href: 'https://www.facebook.com/amine.belaid.583' },
   { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/aminee_belaid/' },
@@ -26,7 +26,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="container hero__inner">
         <div className="hero__copy">
-          <span className="hello">Hello, I'm <span aria-hidden="true">👋</span></span>
+          <span className="hello">Hello, I'm <span aria-hidden="true"></span></span>
           <h1>Amine <em>Belaid</em></h1>
           <p className="role">Software Engineering student &amp; Full-Stack Developer</p>
           <p className="lead">I build modern web applications and turn ideas into real products.</p>
@@ -49,9 +49,7 @@ const Hero = () => {
               </li>
             ))}
             <li>
-              <a href="mailto:aminebelaid2004@gmail.com" aria-label="Email">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
+              
             </li>
           </ul>
         </div>
