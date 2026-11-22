@@ -1,8 +1,6 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowRight, faCode, faDownload, faEnvelope, faGraduationCap, faInfinity, faTrophy,
-} from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight,  faDownload} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './index.scss';
 
@@ -13,14 +11,10 @@ export const SOCIALS = [
   { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/aminee_belaid/' },
 ];
 
-const STATS = [
-  { icon: faCode, value: '3+', label: 'Projects' },
-  { icon: faGraduationCap, value: '1+', label: 'Years of Study' },
-  { icon: faTrophy, value: <FontAwesomeIcon icon={faInfinity} />, label: 'Motivation' },
-];
+
 
 const Hero = () => {
-  const [photoOk, setPhotoOk] = useState(true);
+ 
 
   return (
     <section id="home" className="hero">
